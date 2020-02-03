@@ -393,7 +393,18 @@ Footer - Contact Info
 {
 	color: #fa9e1b;
 }
-
+.contact-btn{
+    font-size: large;
+    color: #d3325f;
+    border-color:#d3325f;
+    background: tranparent;
+    transition: all .3s ease-in-out;
+}
+.contact-btn:hover{
+    background:#e2c069;
+    color: #5c0dee;
+    border-color:#c9c1ac;
+}
 /*********************************
 Copyright
 *********************************/

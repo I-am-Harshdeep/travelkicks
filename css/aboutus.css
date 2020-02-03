@@ -275,13 +275,13 @@ Home
 *********************************/
 .whole-page
 {
-    background-color: rgb(107, 107, 107);
+	background-color: rgb(70, 69, 69);
 }
 .home
 {
 	width: 100%;
 	height: 465px;
-    background: transparent;
+	background: transparent;
 }
 .home_content
 {
@@ -298,19 +298,39 @@ Home
 {
 	font-size: 72px;
 	font-weight: 800;
-	color: #FFFFFF;
+	color: rgb(167, 161, 161);
 	text-transform: uppercase;
 }
 
+.team{
+	background-color: #383737;
+	border-radius: 2%;
+	margin-left: 130px;
+	margin-right: 130px;
+	margin-bottom: 100px;
+}
+
+.subheading
+{
+	padding-top: 30px;
+	color: #f4f4f8;
+	font-size: x-large;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: rgba(136, 0, 255, 0.959);
+	text-align: center;
+}
 /*********************************
 card
 *********************************/
 
 .about
 {
-    padding-left: 20rem;
-    padding-right: 20rem;
-    padding-bottom: 10rem;
+    background-color: #757474;
+}
+.card_2{
+	background-color:  #383737;
+	border-radius: 2%;
 }
 .card-img-top
 {   
@@ -331,14 +351,13 @@ card
 
 .card-text
 {
-    text-align: center;
+	text-align: center;
 }
 
 .work-with-us
 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 10rem; 
+    display: flex;
+
 }
 /*********************************
 Footer
@@ -358,7 +377,6 @@ Footer
 	font-weight: 700;
 	color: #FFFFFF;
     text-transform: uppercase;
-    padding-left: 20rem;
 }
 /*********************************
 11.1 Footer - About
@@ -382,7 +400,6 @@ Footer
 }
 .footer_social_list
 {
-    padding-left: 20rem;
 }
 .footer_social_item
 {
@@ -436,6 +453,18 @@ Footer
 {
 	color: #31124b;
 }
+.contact-btn{
+    font-size: large;
+    color: #d3325f;
+    border-color:#d3325f;
+    background: tranparent;
+    transition: all .3s ease-in-out;
+}
+.contact-btn:hover{
+    background:#e2c069;
+    color: #5c0dee;
+    border-color:#c9c1ac;
+}
 /*********************************
 Footer - Contact Info
 *********************************/
@@ -443,7 +472,7 @@ Footer - Contact Info
 .contact_info_list
 {
     margin-top: 30px;
-    padding-left: 20rem;
+    
 }
 .contact_info_item
 {
