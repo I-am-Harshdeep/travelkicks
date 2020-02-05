@@ -349,6 +349,38 @@ Main Nav
 {
 	margin-top: 70px;
 }
+
+/********************************
+
+********************************/
+.fixed {
+	position: fixed;
+	background: #f83d23;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 6px #000;
+	color: #fff;
+  }
+  .extra,
+  .wrapper {
+	width: 75%;
+	margin: auto;
+	background-color: #ccc;
+  }
+  .wrapper {
+	height: 800px;
+  }
+  .extra {
+	height: 100px;
+  }
+  @media (min-height: 768px) {
+	#wrapper{
+	  height: 2000px;
+	}
+  }
 /*********************************
 button
 *********************************/
@@ -534,10 +566,25 @@ input::placeholder
 	font-size: 55px;
 	text-align: center;
 }
+.subheading2
+{
+	padding-top: 30px;
+	color: #ffffff;
+	font-size: 55px;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .ssubheading
 {
 	padding-top: 10px;
 	color: #000000;
+	font-size: 16px;
+	text-align: center;
+}
+.ssubheading2
+{
+	padding-top: 10px;
+	color: #ffffff;
 	font-size: 16px;
 	text-align: center;
 }
@@ -560,6 +607,81 @@ input::placeholder
 	text-align: left;
 }
 
+/*@@@@@@@@@@@@@@@@@special offer @@@@@@@@@@@@@@@@*/
+.item-container{
+    position: relative;
+    /* for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all .3s ease;
+}
+
+.item-img{
+    transition: all .3s ease;
+}
+
+.item-container:hover .item-img {
+    /*hover on item container item-img will change*/
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left:50%;
+	transform: translate(-50%,50%);
+	background-color: rgba(54, 19, 84, 0.6);
+    color: white;
+    font-size: 2rem;
+    transition: all .6s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: #242424;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+}
+
+.item-container:hover {
+    outline-offset: 0.5rem;
+}
+.item-container:hover .item-text {
+    opacity: 1;
+}
+.item-text{
+	position: absolute;
+	top: 50%;
+    left:50%;
+	transform: translate(-50%,-100%);
+	font-size: 2.5rem;
+	transition: all .6s ease;
+	opacity: 0;
+	color: black;
+	font-weight: bold;
+}
+.item-text:hover{
+    color: #242424;
+}
+.padding-top
+{
+	padding-top: 5rem;
+}
+.padding-bottom
+{
+	padding-bottom: 5rem;
+}
+.offer-img
+{
+	background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5)),url(../images/offer.jpg);
+	background-size: cover;
+	background-position: center;
+}
 /*********************************
 carosal
 *********************************/
