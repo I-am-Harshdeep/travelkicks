@@ -381,6 +381,44 @@ Main Nav
 	  height: 2000px;
 	}
   }
+
+/********************************
+chat with us
+**********************************/
+.chat-fixed-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #715182;
+	border-radius: 12px;
+	z-index: 111;
+	height: 15rem;
+	width: 4rem;
+  }
+  
+  .rotation-wrapper-outer {
+	display: table;
+  }
+  .rotation-wrapper-inner {
+	padding: 50% 0;
+	height: 0;
+  }
+  
+  .chat-fixed-text {
+	font-weight: 600;
+	color: #fff;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	display: block;
+	transform-origin: top left;
+	transform: rotate(-90deg) translate(-100%, 182%);
+	margin-top: -50%;
+	white-space: nowrap;
+  }
 /*********************************
 button
 *********************************/
@@ -425,9 +463,9 @@ button
 }
 .wallpaper1
 {
-	background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5)),url(../images/home.jpg);
-	background-size: cover;
+	background-image:url(../images/travel.jpg);
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .wallpaper2
@@ -456,15 +494,17 @@ form book
 	height: 40rem;
 }
 .aboutus{
+	color: #000000;
 	justify-content: right;
 }
 .book{
 	margin-left: 5rem;
+	color: #000000;
 	padding-top: 5rem;
 }
 .booking-form-box{
 	max-width:350px;
-	border: 1 px solid #ced4da;
+	border: 1 px solid #000000;
 	margin-left: 5rem;
 }
 .radio-btn
@@ -482,10 +522,10 @@ form book
 	width: 15px;
 	top: -2px;
 	left: -1px;
-	background-color: #fff;
+	background-color: rgb(255, 255, 255);
 	position: relative;
 	display: inline-block;
-	border:3px solid #fff;
+	border:3px solid rgb(255, 249, 249);
 	visibility: visible;
 	border-radius: 50%;
 }
@@ -497,7 +537,7 @@ form book
 }
 .radio-btn span
 {
-	color:#fff;
+	color:rgb(0, 0, 0);
 	margin-right:5px;
 	font-size:12px;
 }
@@ -506,11 +546,11 @@ form book
 	margin-bottom: 5px;
 	margin-top: 10px;
 	font-size:12px;
-	color:#fff;
+	color:rgb(0, 0, 0);
 }
 input::placeholder
 {
-	color:#fff !important;
+	color:rgb(0, 0, 0) !important;
 }
 .input-grp
 {
@@ -526,7 +566,7 @@ input::placeholder
 {	margin-bottom: 1rem;
 	font-size:12px;
 	border-radius: 0;
-	color:#fff;
+	color:rgb(0, 0, 0);
 	background: tranparent;
 	box-shadow: none;
 }
@@ -547,14 +587,15 @@ input::placeholder
 	width: 100%;
 	padding:9px 0;
 	font-size: 12px;
-	border: 1px solid #ced4da;
+	color: #000000;
+	border: 1px solid #000000;
 	background: transparent;
 	box-shadow: none;
 	border-radius: 0;
 }
 .search:hover{
 	background: #fff;
-	color: #000;
+	color: rgb(118, 43, 180);
 	transition: .5s;
 }
 

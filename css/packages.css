@@ -135,7 +135,43 @@ h6::selection
 	background: rgba(54, 19, 84, 0.6);
 	z-index: 12;
 }
-
+/********************************
+chat with us
+**********************************/
+.chat-fixed-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #715182;
+	border-radius: 12px;
+	z-index: 111;
+	height: 25rem;
+	width: 6rem;
+  }
+  
+  .rotation-wrapper-outer {
+	display: table;
+  }
+  .rotation-wrapper-inner {
+	padding: 50% 0;
+	height: 0;
+  }
+  
+  .chat-fixed-text {
+	font-weight: 600;
+	color: #fff;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	display: block;
+	transform-origin: top left;
+	transform: rotate(-90deg) translate(-100%, 195%);
+	margin-top: -50%;
+	white-space: nowrap;
+  }
 /*********************************
 Top Bar
 *********************************/
