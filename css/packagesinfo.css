@@ -279,7 +279,7 @@ Main Menu
 	background: transparent;
 }
 .header1{
-    min-height: 1600px;
+    min-height: 700px;
 	background: linear-gradient(/*to right,*/rgba(0, 0, 0, 0.418),rgba(0, 0, 0, 0)),url(../images/packageinf.jpg);
     background-position: center;
 	background-repeat: no-repeat;
@@ -306,6 +306,8 @@ Main Menu
     color: #ffffff;
     border-left: 5px solid #f4f4f8;
     background-color: #3b3b3b;
+    overflow: auto;
+    height: 640px;
 }
 .Days{
     position: relative;
