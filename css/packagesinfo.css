@@ -132,7 +132,7 @@ h6::selection
 {
 	position: fixed;
 	width: 100%;
-	background: rgba(54, 19, 84, 0.6);
+	background: rgba(54, 19, 84, 1);
 	z-index: 12;
 }
 
@@ -194,7 +194,6 @@ Top Bar
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-
 
 .main_nav_col
 {
@@ -276,23 +275,39 @@ Main Menu
 {
 	width: 100%;
 	height: 180px;
-	background: transparent;
 }
 .header1{
-    min-height: 700px;
+    min-height: 1550px;
 	background: linear-gradient(/*to right,*/rgba(0, 0, 0, 0.418),rgba(0, 0, 0, 0)),url(../images/packageinf.jpg);
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
     position: relative;
 }
+::-webkit-scrollbar
+{
+	width: 0;
+}
+#progressbar{
+	position: fixed;
+	top: 180px;
+	left: 0;
+	right: 0;
+	max-height: 480px;
+	z-index: 111;
+	width:15px;
+	border-radius: 10px;
+	background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+}
 .background{
-    width: 30%;
-    background-color: #3b3b3b;
+	background-color: #3b3b3b;
+	position: relative;
+	width: 30%;
+	height: 1525px;
 }
 .padding{
     color: #ffffff;
-    padding-left: 6rem;
+    padding-left: 3rem;
 }
 .title{
     width: 50%;
@@ -306,8 +321,7 @@ Main Menu
     color: #ffffff;
     border-left: 5px solid #f4f4f8;
     background-color: #3b3b3b;
-    overflow: auto;
-    height: 640px;
+    height: 1485px;
 }
 .Days{
     position: relative;
@@ -316,7 +330,7 @@ Main Menu
 }
 .info{
     margin-left: 32rem;
-    margin-top: 5rem;
+    margin-top: -80rem;
     width: 30%;
 }
 .title2{

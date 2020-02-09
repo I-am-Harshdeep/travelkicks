@@ -1,2 +1,16 @@
-
+::-webkit-scrollbar
+{
+	width: 0;
+}
+#progressbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 111;
+	width:15px;
+	height: 100%;
+	border-radius: 10px;
+	background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+}
   

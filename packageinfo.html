@@ -65,6 +65,7 @@
     <div class="home"></div>
     <div class="header1">
                     <div class="background">
+						<div id="progressbar"></div>
                         <div class="title">
                             <div class="bigfont"><a href="home.html">&#x2715;</a></div>
                             <div><h3 class="padding"> Days Plan</h3></div>
@@ -144,61 +145,6 @@
 
 
 
-<!-- Footer -->
-
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-
-			<!-- Footer Column -->
-			<div class="footer_column col-lg-4 order-lg-1 order-2">
-				<div class="footer_col d-flex align-items-center">
-					<div class="footer_content footer_about">
-						<div class="logo_container footer_logo">
-							<div class="logo"><a href="#"><img src="images/logo.png" alt="">TALK TO US</a></div>
-						</div>
-						<p class="footer_about_text">Travelkicks is simply dummy text of the printing and typesetting industry.Travelkicks has been the industry's standard dummy text ever since the 1500s.</p>
-						<button type="submit" class="btn btn-block bnt-med text-uppercase contact-btn">CONTACT US</button>
-					</div>
-					
-				</div>
-			</div>
-
-			<!-- Footer Column -->
-			<div class="footer_column col-lg-6 order-lg-1 order-2">
-				<div class="footer_col d-flex align-items-center justify-content-lg-end">
-					<div class="footer_content footer_contact">
-						<div class="footer_title">contact info</div>
-						<ul class="contact_info_list">
-							<li class="contact_info_item d-flex flex-row">
-								<div class="contact_info_text">OFFICE</div>
-							</li>
-							<li class="contact_info_item d-flex flex-row">
-								<div class="contact_info_text">office Address</div>
-							</li>
-							<li class="contact_info_item d-flex flex-row">
-								<div class="contact_info_text">INDIA 110056</div>
-							</li>
-							<li class="contact_info_item d-flex flex-row">
-								<div class="contact_info_text">+91 1234 567 890</div>
-							</li>
-							<li class="contact_info_item d-flex flex-row">
-								<div class="contact_info_text"><a href="mailto:travelkicks@gmail.com?Subject=Hello" target="_top">travelkicks@gmail.com</a></div>
-							</li>
-						</ul>
-						<ul class="footer_social_list">
-							<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li class="footer_social_item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li class="footer_social_item"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-							<li class="footer_social_item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</footer>
 	<!-- Copyright -->
 
 	<div class="copyright">
@@ -234,7 +180,16 @@
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
 <script src="js/about_custom.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		var scroll = $ (window).scrollTop(),
+		dh = $(document).height(),
+		wh = $(window).height();
+		scrollPercent = (scroll / (dh-wh)) * 100;
+			$('#progressbar').css('height', scrollPercent + '%')
+	})
+</script>
 </body>
 
 </html>
