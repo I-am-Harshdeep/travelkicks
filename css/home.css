@@ -393,7 +393,8 @@ chat with us
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: #715182;
+	background-color: #31124b;
+	opacity: 0.8;
 	border-radius: 12px;
 	z-index: 111;
 	height: 15rem;
