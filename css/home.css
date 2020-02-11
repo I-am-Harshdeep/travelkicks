@@ -554,7 +554,7 @@ input::placeholder
 }
 .input-grp
 {
-	width:151px;
+	width: 151px;
 	display: inline-block;
 }
 .mar-left
@@ -784,8 +784,8 @@ Footer
 .footer
 {
 	width: 100%;
-	padding-top: 113px;
-	padding-bottom: 104px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background: #31124b;
 }
 
