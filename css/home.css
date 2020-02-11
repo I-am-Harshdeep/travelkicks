@@ -479,8 +479,10 @@ button
 /****************************
 form book
 ******************************/
-#main { 
-    width: 100%;
+.container-book-about{
+	width: 100%;
+}
+#main {
     margin: 0;
 }
 #sidebar    {
@@ -490,7 +492,6 @@ form book
 }
 
 #page-wrap  {
-	margin-left: 68rem;
 	height: 40rem;
 	color: #000000;
 	margin-right: 5rem;
