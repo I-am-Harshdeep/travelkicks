@@ -317,7 +317,7 @@ Home
 	background: transparent;
 }
 #header1{
-    min-height: calc(100vh - 94px);
+    min-height: calc(90vh - 94px);
     background: linear-gradient(/*to right,*/rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)),url(../images/home_slider.jpg);
     background-position: center;
     background-size: cover;
@@ -462,11 +462,11 @@ Footer - Contact Info
 
 .contact_info_list
 {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .contact_info_item
 {
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 }
 .contact_info_icon
 {

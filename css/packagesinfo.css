@@ -277,7 +277,7 @@ Main Menu
 	height: 180px;
 }
 .header1{
-    min-height: 1550px;
+	min-height: 1550px;
 	background: linear-gradient(/*to right,*/rgba(0, 0, 0, 0.418),rgba(0, 0, 0, 0)),url(../images/packageinf.jpg);
     background-position: center;
 	background-repeat: no-repeat;
